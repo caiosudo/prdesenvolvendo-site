@@ -1,0 +1,34 @@
+body{
+    margin: 0px;
+}
+
+#fundoI{
+    position: relative;
+    width: 100px auto;
+    height: 60px;
+    background-color: rgb(1, 129, 235);
+}
+
+#menu{
+    position: absolute;
+    top: 3%;
+    margin-left: 75%;
+}
+
+#bo{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 123%;
+}
+
+#bo:hover{
+    text-decoration: underline 2px;
+}
+
+h1{
+    position: absolute;
+    top: 0px;
+    margin-left: 1%;
+    color: white;
+}
