@@ -1,3 +1,4 @@
+
 body{
     margin: 0px;
 }
@@ -31,4 +32,78 @@ h1{
     top: 0px;
     margin-left: 1%;
     color: white;
+}
+
+#fundo{
+    position: absolute;
+    width: 100%;
+    filter: blur(10px);
+}
+
+.text-animado{
+    font-size: 45px;
+    font-weight: 300;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: 300px;
+    margin-left: 50px;
+}
+
+.text-animado span{
+    position: relative;
+}
+
+.text-animado span::before{
+    content: "";
+    color: rgb(0, 0, 0);
+    animation: palavra 20s infinite;
+}
+
+.text-animado span::after{
+    content: "";
+    position: absolute;
+    height: 101.7%;
+    border-left:  2px solid white;
+    right: -10%;
+    opacity: 1;
+    animation: cursor .8s infinite, digita 20s steps(15) infinite;
+    width:calc(100% + 18px);
+    background-color: #ffffff;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 22px);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px  solid #212121;
+    }
+}
+
+@keyframes palavra{
+    0%,20%{
+        content: "loja";
+    }
+
+    21%,40%{
+        content: "empresa";
+    }
+
+    41%,60%{
+        content: "micro-empresa";
+    }
+
+    61%,80%{
+        content: "marca";
+    }
+
+    81%,100%{
+        content: "marca empreendedora";
+    }
 }
