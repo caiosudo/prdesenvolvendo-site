@@ -1,36 +1,38 @@
 
 body{
     margin: 0px;
+    background-color: aqua;
 }
 
-#fundoI{
-    position: relative;
-    width: 100px auto;
-    height: 60px;
-    background-color: rgb(1, 129, 235);
+header{
+    padding: 60px 4%;
 }
 
-#menu{
-    position: absolute;
-    top: 3%;
-    margin-left: 75%;
+#tudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#bo{
-    color: white;
+header li, a{
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    margin-right: 10px;
+    list-style-type: none;
     font-size: 123%;
+    display: inline-block;
+    margin: 0px 30px;
 }
 
 #bo:hover{
     text-decoration: underline 2px;
 }
 
+#bot{
+   
+}
+
 h1{
-    position: absolute;
-    top: 0px;
-    margin-left: 1%;
+    
     color: white;
 }
 
@@ -68,7 +70,7 @@ h1{
     opacity: 1;
     animation: cursor .8s infinite, digita 20s steps(15) infinite;
     width:calc(100% + 18px);
-    background-color: #ffffff;
+    background-color: aqua;
 }
 
 @keyframes digita {
